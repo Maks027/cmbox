@@ -1,0 +1,8 @@
+[submodule "third_party/CMSIS_6"]
+	path = third_party/CMSIS_6
+	url = https://github.com/ARM-software/CMSIS_6.git
+	shallow = true
+[submodule "third_party/cmsis-device-f4"]
+	path = third_party/cmsis-device-f4
+	url = https://github.com/STMicroelectronics/cmsis-device-f4.git
+	shallow = true

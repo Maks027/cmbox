@@ -1,0 +1,14 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": true,
+
+  // User settings disable this globally (STM32Cube extension); re-enable for this project
+  "C_Cpp.intelliSenseEngine": "default",
+
+  "cortex-debug.gdbPath": "gdb-multiarch",
+  "cortex-debug.openocdPath": "/usr/bin/openocd",
+
+  "files.associations": {
+    "*.ld": "linkerscript"
+  }
+}

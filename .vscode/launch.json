@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/debug/cmbox.elf",
+      "configFiles": ["${workspaceFolder}/openocd.cfg"],
+      "svdFile": "${workspaceFolder}/svd/STM32F401.svd",
+      "runToEntryPoint": "main",
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Attach (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "attach",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/debug/cmbox.elf",
+      "configFiles": ["${workspaceFolder}/openocd.cfg"],
+      "svdFile": "${workspaceFolder}/svd/STM32F401.svd"
+    }
+  ]
+}
